@@ -48,7 +48,7 @@ p {
 .center{
     text-align: center;
 }
-  
+@media(min-width:1024px){  
 /*-- Forside --*/
 #fs-header{
     background-image: url(../images/forside-header-mobile.png);
@@ -221,7 +221,7 @@ p {
 
 
 
-
+}
 /*----- 
 
 Resposive sizes: Sæt sizing ind til de forskellige størrelser.
