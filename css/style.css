@@ -48,7 +48,6 @@ p {
 .center{
     text-align: center;
 }
-@media (max-width:768px) {  
 /*-- Forside --*/
 #fs-header{
     background-image: url(../images/forside-header-mobile.png);
@@ -221,7 +220,6 @@ p {
 
 
 
-}
 /*----- 
 
 Resposive sizes: Sæt sizing ind til de forskellige størrelser.
@@ -231,7 +229,7 @@ Resposive sizes: Sæt sizing ind til de forskellige størrelser.
 
 
 /*tablet*/
-@media(min-width:769px) and (max-width: 1023px) {
+@media(min-width:769px) {
     #fs-header{
     background-image: url(../images/forside-header-tablet.png);
     background-repeat: no-repeat;
@@ -242,7 +240,7 @@ Resposive sizes: Sæt sizing ind til de forskellige størrelser.
     
 }
 /*desktop*/
-@media (min-width:1024px) {
+@media(min-width:1024px){
     #fs-header{
     background-image: url(../images/forside-header-desktop.png);
     background-repeat: no-repeat;
