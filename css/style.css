@@ -229,7 +229,7 @@ Resposive sizes: Sæt sizing ind til de forskellige størrelser.
 
 
 /*tablet*/
-@media(min-width:769px) {
+@media (min-width:769px) {
     #fs-header{
     background-image: url(../images/forside-header-tablet.png);
     background-repeat: no-repeat;
@@ -240,7 +240,7 @@ Resposive sizes: Sæt sizing ind til de forskellige størrelser.
     
 }
 /*desktop*/
-@media(min-width:1024px){
+@media (min-width:1024px) {
     #fs-header{
     background-image: url(../images/forside-header-desktop.png);
     background-repeat: no-repeat;
