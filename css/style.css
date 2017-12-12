@@ -1,0 +1,255 @@
+/*----- 
+
+            Global: generelle regler for hele sited som fx. font family, serif, color etc.
+
+-----*/
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+h1 {
+    font-family: overskrift;
+    letter-spacing: 5px;
+    font-size: 3.6em;
+}
+
+h2 {
+    font-family: overskrift;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+}
+
+@font-face {
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+}
+
+@font-face {
+    font-family: overskrift;
+    src: url(../fonts/bebas_neue/bebas_neue.otf);
+}  
+
+#grid{
+    display: grid;
+    
+}
+
+.wrapper{
+    margin: 3%;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+  
+/*-- Forside --*/
+#fs-header{
+    background-image: url(../images/forside-header-mobile.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size:cover;
+    height: 100%;
+}
+
+.fs-content{
+    margin-top: 375px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.fs-content img{
+    width: 30%
+}
+
+#fs-header a{
+    text-decoration: none;
+}
+#fs-header a h2{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 200px 30% 2% 30%;
+    color: black;
+    animation: bf-h1 3s ease;
+}
+
+.bf-h1{ 
+    animation: bf-h1 3s ease;
+    z-index: 100;
+    top: 100px;
+}
+
+.bf-logo {
+		top:100px;
+		z-index:100;
+        animation: bf-logo 1.5s ease;
+}
+
+@keyframes bf-logo {
+    to{transform: translateX(0px);}
+	from{transform: translateX(2000px);}
+}
+
+@keyframes bf-h1{
+    0%  { opacity: 0; }
+    50% { opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+
+.fs-refleksioner{
+    background-image: url(../images/forside-reflektering.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10%;
+
+    min-height: 760px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    }
+    
+    .refleksion1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .refleksion2{
+        grid-row: 1;
+        grid-column: 3;
+    }
+    
+    .refleksion3{
+        grid-row: 10;
+        grid-column: 1;
+    }
+    
+    .refleksion4{
+        grid-row: 10;
+        grid-column: 2;
+    }
+    
+    .refleksion5{
+        grid-row: 10;
+        grid-column: 3;
+    }
+.fs-refleksioner img {
+    position: relative;
+}
+
+.fs-refleksioner p{
+    font-size: 1.5em;
+    border: 2px solid #00b8f1;
+    border-radius: 5px;
+    padding: 3%;
+    max-height: 220px;
+}
+
+.fs-skills{
+    margin-bottom: 10%;
+}
+.fs-skills img{
+    width: 100%;
+}
+
+
+.fs-galleri{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+}
+
+#fs-g-1{
+    grid-row: 3 / 5;
+    grid-column: 1 / 8;
+    background-image: url(../images/forside-galleri1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 5%;
+}
+#fs-g-2{
+    grid-row: 3 / 5;
+    grid-column: 8 / 13;
+    background-image: url(../images/forside-galleri2.png);
+    background-repeat: no-repeat;
+    min-width: 266px;
+    min-height: 462px;
+    background-size: 100%;
+}
+#fs-g-3{
+    grid-row: 1 / 2;
+    grid-column: 1 / 7;
+    background-image: url(../images/forside-galleri3.png);
+    background-repeat: no-repeat;
+    min-width: 316px;
+    min-height: 211px;
+    background-size: 100%;
+
+}
+#fs-g-4{
+    grid-row: 1 / 2;
+    grid-column: 7 / 13;
+    background-image: url(../images/forside-galleri4.png);
+    background-repeat: no-repeat;
+    min-width: 316px;
+    min-height: 211px;
+    background-size: 100%;
+
+}
+#fs-g-5{
+    grid-row: 2 / 3;
+    grid-column: 1 / 13;
+    background-image: url(../images/forside-galleri5.png);
+    background-repeat: no-repeat;
+    min-width: 672px;
+    min-height: 273px;
+    background-size: 100%;
+
+    
+}
+
+/*-- Portfolie --*/
+
+
+
+
+/*----- 
+
+Resposive sizes: Sæt sizing ind til de forskellige størrelser.
+
+-----*/
+
+
+
+/*tablet*/
+@media(min-width:769px) and (max-width: 1023px) {
+    #fs-header{
+    background-image: url(../images/forside-header-tablet.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+    height: 1080px;
+    }   
+    
+}
+/*desktop*/
+@media(min-width:1024px){
+    #fs-header{
+    background-image: url(../images/forside-header-desktop.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+    height: 1080px;
+    } 
+}
+
+
