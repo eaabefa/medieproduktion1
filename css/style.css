@@ -48,7 +48,7 @@ p {
 .center{
     text-align: center;
 }
-@media(min-width:1024px){  
+@media(max-width:768px){  
 /*-- Forside --*/
 #fs-header{
     background-image: url(../images/forside-header-mobile.png);
